@@ -35,6 +35,7 @@ Make sure you have Docker and Docker Compose installed on your system.
     ```bash
     docker-compose up -d
     ```
+6. [Config .ENV](https://symfony.com/doc/current/configuration.html)
 
 ## Managing Docker Containers
 
@@ -61,7 +62,6 @@ Make sure you have Docker and Docker Compose installed on your system.
     ```bash
     docker compose exec -it php-fpm bash
     ```
-- [Config .ENV](https://symfony.com/doc/current/configuration.html)
 
 
 - Creation of database:
