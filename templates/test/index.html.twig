@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div>
+    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div {{ react_component('Hello', { 'fullName': number }) }}>
+        Loading... <i class="fas fa-cog fa-spin fa-3x"></i>
+    </div>
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>/var/www/src/Controller/TestController.php</code></li>
+        <li>Your template at <code>/var/www/templates/test/index.html.twig</code></li>
+    </ul>
+</div>
+{% endblock %}
