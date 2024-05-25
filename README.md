@@ -62,6 +62,22 @@ Make sure you have Docker and Docker Compose installed on your system.
     ```bash
     docker compose exec -it php-fpm bash
     ```
+- Access container for backend shell:
+
+    ```bash
+    docker compose exec -it php-fpm bash
+  ```
+  
+- Access container for frontend shell:
+
+    ```bash
+    docker compose exec -it frontend bash
+    ```
+- Start container shell:
+
+    ```bash
+    docker start my_container
+    ```
 
 
 - Creation of database:
@@ -77,5 +93,5 @@ Make sure you have Docker and Docker Compose installed on your system.
 - Usage Sass:
 
   ```bash
-  npm run watch
+  npm run start
   ```
