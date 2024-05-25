@@ -57,11 +57,6 @@ Make sure you have Docker and Docker Compose installed on your system.
     docker compose logs
     ```
 
-- Access container shell:
-
-    ```bash
-    docker compose exec -it php-fpm bash
-    ```
 - Access container for backend shell:
 
     ```bash
@@ -78,7 +73,11 @@ Make sure you have Docker and Docker Compose installed on your system.
     ```bash
     docker start my_container
     ```
+- Start container backend full:
 
+    ```bash
+    docker compose up -d nginx
+    ```
 
 - Creation of database:
 
@@ -90,8 +89,8 @@ Make sure you have Docker and Docker Compose installed on your system.
     ```bash
     php bin/console make:migration
     ```
-- Usage Sass:
-
+  
+- Usage Front:
   ```bash
   npm run start
   ```
