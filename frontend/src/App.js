@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     console.log('test')
+    console.log('test')
   }, []);
   return (
       <div className="App">
