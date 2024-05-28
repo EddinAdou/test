@@ -1,0 +1,34 @@
+
+.img-rounded {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 70%; /* Taille de l'image réduite à 70% de sa taille originale */
+    display: block;
+    margin: 0 auto; /* Centrage de l'image */
+}
+
+.content-section {
+    padding: 30px;
+}
+
+h2 {
+    font-size: 1.75rem; /* Taille du titre */
+    color: #333; /* Couleur du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+p {
+    font-size: 1rem; /* Taille du texte */
+    color: #666; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne */
+}
+
+@media (max-width: 768px) {
+    .img-rounded {
+        width: 100%; /* Taille de l'image ajustée à 100% pour les appareils mobiles */
+    }
+    .content-section h2,
+    .content-section p {
+        text-align: center; /* Centrage du texte pour les utilisateurs mobiles */
+    }
+}
