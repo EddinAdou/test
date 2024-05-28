@@ -1,26 +1,28 @@
-import './App.scss';
-import { useEffect } from 'react';
-import axios from "axios";
+import React from "react";
 
-function App() {
-    const request = async ()=>{
-        try {
-            const response = await axios.get('http://localhost:8000/api/products');
-            console.log(response.data);
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    }
-  useEffect(() => {
-      request()
-  }, []);
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import DashboardMain from "./pages/DashboardMain";
+import DashboardLastReport from "./pages/DashboardLastReport";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import SignUp from "./components/SignUp";
+
+
+const App = () => {
   return (
-      <div className="App">
-        <div className="alert alert-secondary" role="alert">
-          A simple secondary alert—check it out!
-        </div>
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/DashboardMain" element={<DashboardMain />} />
+        <Route path="/DashboardLastReport" element={<DashboardLastReport />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="*" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
