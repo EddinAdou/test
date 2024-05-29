@@ -1,7 +1,5 @@
 import React from 'react';
 import './LandingPage.scss';
-import im1 from '../assets/images/im1.webp';
-import im2 from '../assets/images/im2.webp';
 
 const LandingPage = () => {
     return (
