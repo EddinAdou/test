@@ -5,15 +5,31 @@
   color: #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  width: 100%;
 }
 
 .footer .container {
   display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
-  max-width: 1200px; /* Ajuster la largeur maximale du conteneur */
-  margin: 0 auto; /* Centrer le conteneur */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h5 {
@@ -57,7 +73,7 @@ h5 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px; /* Ajuster la largeur maximale du formulaire pour les grands écrans */
+  max-width: 1200px;
   margin-top: 20px;
   position: relative;
 }
@@ -67,13 +83,13 @@ h5 {
   border: 1px solid #ccc;
   padding: 10px;
   flex-grow: 1;
-  width: 100%; /* Prendre toute la largeur disponible */
-  padding-right: 60px; /* Ajouter de l'espace pour le bouton à l'intérieur de l'input */
+  width: 100%;
+  padding-right: 60px;
 }
 
 .footer form button {
   position: absolute;
-  right: 10px; /* Ajuster la position du bouton */
+  right: 10px;
   border-radius: 50%;
   border: none;
   padding: 10px;
@@ -92,18 +108,23 @@ h5 {
 
 @media (max-width: 768px) {
   .footer .container {
-    padding: 20px; /* Réduire le padding pour les petits écrans */
+    padding: 20px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer form {
-    max-width: 100%; /* Prendre toute la largeur disponible */
+    max-width: 100%;
     flex-direction: row;
     align-items: center;
   }
 
   .footer form input {
     margin-right: 0;
-    width: calc(100% - 5px); /* Ajuster pour compenser la taille du bouton */
+    width: calc(100% - 5px);
   }
 
   .footer form button {

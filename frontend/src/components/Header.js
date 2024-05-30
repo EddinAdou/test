@@ -15,13 +15,13 @@ const Header = () => {
                         <Navbar.Brand href="#home" className="logo">Wardiere Inc.</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
+                            <Nav className="me-auto w-100">
                                 <Nav.Link href="#accueil" className="nav-link">Accueil</Nav.Link>
                                 <Nav.Link href="#blog" className="nav-link">Blog</Nav.Link>
                                 <Nav.Link href="#solutions" className="nav-link">Nos solutions</Nav.Link>
                                 <Nav.Link href="#about" className="nav-link">A propos de nous</Nav.Link>
+                                <Button className="btn btn-success ms-auto">S'inscrire</Button>
                             </Nav>
-                            <Button className="btn btn-success">S'inscrire</Button>
                         </Navbar.Collapse>
                     </Navbar>
                 </Container>
