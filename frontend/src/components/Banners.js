@@ -12,8 +12,8 @@ const Banners = () => {
                 enableDeclineButton
                 cookieName="cookieConsent"
                 style={{ background: "#2B373B" }}
-                buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-                declineButtonStyle={{ color: "#4e503b", fontSize: "13px" }}
+                buttonStyle={{ background: "#49c58f", color: "#ffffff", fontSize: "13px" }}
+                declineButtonStyle={{ background: "#b22222", color: "#ffffff", fontSize: "13px" }}
                 expires={150}
             >
                 Ce site utilise des cookies pour améliorer l'expérience utilisateur.{" "}
