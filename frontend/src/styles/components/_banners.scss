@@ -1,0 +1,19 @@
+.container-fluid.landing-container {
+display: flex}
+
+.cookieConsent {
+  background-color: #2B373B !important;
+  color: #FFFFFF !important;
+
+  .cookieConsentButton {
+    color: white !important;
+    font-size: 13px !important;
+    background-color: #5b9bd1 !important;
+  }
+
+  .cookieConsentDeclineButton {
+    color: white !important;
+    font-size: 13px !important;
+    background-color: red !important;
+  }
+}
